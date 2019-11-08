@@ -1438,7 +1438,7 @@ Image *load_image(BPGMetaData **pmd, const char *infilename,
     BPGMetaData *md;
 
     *pmd = NULL;
-
+///////////////////////////////////////////////////fmemopenhere////////////////////////////////////////////////////////////////
     f = fopen(infilename, "rb");
     if (!f)
         return NULL;
@@ -2947,6 +2947,8 @@ int main(int argc, char **argv)
         /* end of stream */
         bpg_encoder_encode(enc_ctx, NULL, my_write_func, f);
     } else {
+		
+		////////////////////////////////////////////////////important////////////////////////////////////////////////////////////////////
         img = load_image(&md, infilename, color_space, bit_depth, limited_range,
                          premultiplied_alpha);
         if (!img) {
