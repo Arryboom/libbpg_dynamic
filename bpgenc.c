@@ -2872,7 +2872,7 @@ int main(int argc, char **argv)
     if (optind >= argc) 
         help(0);
     infilename = argv[optind];
-/////////////////////////////////////////////////////////////////////////////where we start
+////////////////////////////////////outfile/////////////////////////////////////////where we start
     f = fopen(outfilename, "wb");
     if (!f) {
         perror(outfilename);
